@@ -5,8 +5,8 @@
  * Function coercing values to an iterator. It can be quite useful when needing
  * to handle iterables and iterators the same way.
  */
-var Iterator = require('./iterator.js');
-var support = require('./support.js');
+import Iterator from './iterator.js';
+import * as support from './support.js';
 
 var ARRAY_BUFFER_SUPPORT = support.ARRAY_BUFFER_SUPPORT;
 var SYMBOL_SUPPORT = support.SYMBOL_SUPPORT;
@@ -34,7 +34,7 @@ function iterOrNull(target) {
   return null;
 }
 
-module.exports = function iter(target) {
+export default function iter(target) {
   var iterator = iterOrNull(target);
 
   if (!iterator)

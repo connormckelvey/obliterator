@@ -93,4 +93,4 @@ Iterator.is = function (value) {
 /**
  * Exporting.
  */
-module.exports = Iterator;
+export default Iterator;

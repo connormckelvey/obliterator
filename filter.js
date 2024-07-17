@@ -4,8 +4,8 @@
  *
  * Function returning a iterator filtering the given iterator.
  */
-var Iterator = require('./iterator.js');
-var iter = require('./iter.js');
+import Iterator from './iterator.js';
+import iter from './iter.js';
 
 /**
  * Filter.
@@ -14,7 +14,7 @@ var iter = require('./iter.js');
  * @param  {function} predicate - Predicate function.
  * @return {Iterator}
  */
-module.exports = function filter(target, predicate) {
+export default function filter(target, predicate) {
   var iterator = iter(target);
   var step;
 

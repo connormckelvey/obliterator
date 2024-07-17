@@ -4,8 +4,8 @@
  *
  * Function returning a iterator mapping the given iterator's values.
  */
-var Iterator = require('./iterator.js');
-var iter = require('./iter.js');
+import Iterator from './iterator.js';
+import iter from './iter.js';
 
 /**
  * Map.
@@ -14,7 +14,7 @@ var iter = require('./iter.js');
  * @param  {function} mapper - Map function.
  * @return {Iterator}
  */
-module.exports = function map(target, mapper) {
+export default function map(target, mapper) {
   var iterator = iter(target);
 
   return new Iterator(function next() {

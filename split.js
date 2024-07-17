@@ -4,7 +4,7 @@
  *
  * Function returning an iterator over the pieces of a regex split.
  */
-var Iterator = require('./iterator.js');
+import Iterator from './iterator.js';
 
 /**
  * Function used to make the given pattern global.
@@ -30,7 +30,7 @@ function makeGlobal(pattern) {
  * @param  {string}   string  - Target string.
  * @return {Iterator}
  */
-module.exports = function split(pattern, string) {
+export default function split(pattern, string) {
   if (!(pattern instanceof RegExp))
     throw new Error(
       'obliterator/split: invalid pattern. Expecting a regular expression.'

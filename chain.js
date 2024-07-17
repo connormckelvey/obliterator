@@ -4,8 +4,8 @@
  *
  * Variadic function combining the given iterables.
  */
-var Iterator = require('./iterator.js');
-var iter = require('./iter.js');
+import Iterator from './iterator.js';
+import iter from './iter.js';
 
 /**
  * Chain.
@@ -13,7 +13,7 @@ var iter = require('./iter.js');
  * @param  {...Iterator} iterables - Target iterables.
  * @return {Iterator}
  */
-module.exports = function chain() {
+export default function chain() {
   var iterables = arguments;
   var current = null;
   var i = -1;

@@ -5,7 +5,7 @@
  * Function taking an iterable and returning whether the given item can be
  * found in it.
  */
-var iter = require('./iter.js');
+import iter from './iter.js';
 
 /**
  * Includes.
@@ -14,7 +14,7 @@ var iter = require('./iter.js');
  * @param  {function} value     - Searched value.
  * @return {boolean}
  */
-module.exports = function includes(iterable, value) {
+export default function includes(iterable, value) {
   var iterator = iter(iterable);
 
   var step;

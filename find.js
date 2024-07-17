@@ -5,7 +5,7 @@
  * Function taking an iterable and a predicate and returning the first item
  * matching the given predicate.
  */
-var iter = require('./iter.js');
+import iter from './iter.js';
 
 /**
  * Find.
@@ -14,7 +14,7 @@ var iter = require('./iter.js');
  * @param  {function} predicate - Predicate function.
  * @return {boolean}
  */
-module.exports = function find(iterable, predicate) {
+export default function find(iterable, predicate) {
   var iterator = iter(iterable);
 
   var step;

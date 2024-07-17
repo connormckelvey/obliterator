@@ -4,7 +4,7 @@
  *
  * Helper function used to easily iterate over mixed values.
  */
-var support = require('./support.js');
+import * as support from './support.js';
 
 var ARRAY_BUFFER_SUPPORT = support.ARRAY_BUFFER_SUPPORT;
 var SYMBOL_SUPPORT = support.SYMBOL_SUPPORT;
@@ -15,7 +15,7 @@ var SYMBOL_SUPPORT = support.SYMBOL_SUPPORT;
  * @param  {any}      iterable - Iterable value.
  * @param  {function} callback - Callback function.
  */
-module.exports = function forEach(iterable, callback) {
+export default function forEach(iterable, callback) {
   var iterator, k, i, l, s;
 
   if (!iterable) throw new Error('obliterator/forEach: invalid iterable.');

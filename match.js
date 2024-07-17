@@ -5,7 +5,7 @@
  * Function returning an iterator over the matches of the given regex on the
  * target string.
  */
-var Iterator = require('./iterator.js');
+import Iterator from './iterator.js';
 
 /**
  * Match.
@@ -14,7 +14,7 @@ var Iterator = require('./iterator.js');
  * @param  {string}   string  - Target string.
  * @return {Iterator}
  */
-module.exports = function match(pattern, string) {
+export default function match(pattern, string) {
   var executed = false;
 
   if (!(pattern instanceof RegExp))

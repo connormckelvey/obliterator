@@ -6,7 +6,7 @@
  * Function taking n or every value of the given iterator and returns them
  * into an array.
  */
-var iter = require('./iter.js');
+import iter from './iter.js';
 
 /**
  * Take.
@@ -15,7 +15,7 @@ var iter = require('./iter.js');
  * @param  {number}   [n]      - Optional number of items to take.
  * @return {array}
  */
-module.exports = function take(iterable, n) {
+export default function take(iterable, n) {
   var l = arguments.length > 1 ? n : Infinity,
     array = l !== Infinity ? new Array(l) : [],
     step,

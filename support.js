@@ -1,2 +1,2 @@
-exports.ARRAY_BUFFER_SUPPORT = typeof ArrayBuffer !== 'undefined';
-exports.SYMBOL_SUPPORT = typeof Symbol !== 'undefined';
+export const ARRAY_BUFFER_SUPPORT = typeof ArrayBuffer !== 'undefined';
+export const SYMBOL_SUPPORT = typeof Symbol !== 'undefined';

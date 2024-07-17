@@ -4,7 +4,7 @@
  *
  * Iterator returning combinations of the given array.
  */
-var Iterator = require('./iterator.js');
+import Iterator from './iterator.js';
 
 /**
  * Helper mapping indices to items.
@@ -20,7 +20,7 @@ function indicesToItems(target, items, indices, r) {
  * @param  {number}   r     - Size of the subsequences.
  * @return {Iterator}
  */
-module.exports = function combinations(array, r) {
+export default function combinations(array, r) {
   if (!Array.isArray(array))
     throw new Error(
       'obliterator/combinations: first argument should be an array.'

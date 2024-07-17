@@ -4,7 +4,7 @@
  *
  * Function returning a range iterator.
  */
-var Iterator = require('./iterator.js');
+import Iterator from './iterator.js';
 
 /**
  * Range.
@@ -14,7 +14,7 @@ var Iterator = require('./iterator.js');
  * @param  {number} step  - Step.
  * @return {Iterator}
  */
-module.exports = function range(start, end, step) {
+export default function range(start, end, step) {
   if (arguments.length === 1) {
     end = start;
     start = 0;

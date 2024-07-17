@@ -4,9 +4,9 @@
  *
  * Iterator returning the power set of the given array.
  */
-var Iterator = require('./iterator.js'),
-  combinations = require('./combinations.js'),
-  chain = require('./chain.js');
+import Iterator from './iterator.js';
+import combinations from './combinations.js';
+import chain from './chain.js';
 
 /**
  * Power set.
@@ -14,7 +14,7 @@ var Iterator = require('./iterator.js'),
  * @param  {array}    array - Target array.
  * @return {Iterator}
  */
-module.exports = function powerSet(array) {
+export default function powerSet(array) {
   var n = array.length;
 
   var iterators = new Array(n + 1);

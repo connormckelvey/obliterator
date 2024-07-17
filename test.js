@@ -4,8 +4,8 @@
  *
  * Unit test for the library's functions.
  */
-var assert = require('assert');
-var lib = require('./');
+import assert from 'assert';
+import * as lib from './index.js';
 
 var Iterator = lib.Iterator;
 

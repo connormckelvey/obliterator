@@ -5,7 +5,7 @@
  * Function taking an iterable and a predicate and returning whether all
  * its items match the given predicate.
  */
-var iter = require('./iter.js');
+import iter from'./iter.js';
 
 /**
  * Every.
@@ -14,7 +14,7 @@ var iter = require('./iter.js');
  * @param  {function} predicate - Predicate function.
  * @return {boolean}
  */
-module.exports = function every(iterable, predicate) {
+export default function every(iterable, predicate) {
   var iterator = iter(iterable);
 
   var step;

@@ -12,7 +12,7 @@
  * @param  {Iterator} iterator - Target iterator.
  * @param  {number}   [steps]  - Optional steps.
  */
-module.exports = function consume(iterator, steps) {
+export default function consume(iterator, steps) {
   var step,
     l = arguments.length > 1 ? steps : Infinity,
     i = 0;

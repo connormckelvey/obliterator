@@ -1,4 +1,4 @@
-var Obliterator = require('../iterator.js');
+import Obliterator from '../iterator.js';
 
 var SIZE = 500000000;
 

@@ -6,7 +6,7 @@
  * Same as the take function but enables the user to select an array class
  * in which to insert the retrieved values.
  */
-var iter = require('./iter.js');
+import iter from './iter.js';
 
 /**
  * Take Into.
@@ -16,7 +16,7 @@ var iter = require('./iter.js');
  * @param  {number}   n          - Number of items to take.
  * @return {array}
  */
-module.exports = function takeInto(ArrayClass, iterable, n) {
+export default function takeInto(ArrayClass, iterable, n) {
   var array = new ArrayClass(n),
     step,
     i = 0;

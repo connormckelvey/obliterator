@@ -3,6 +3,7 @@
   "version": "2.0.4",
   "description": "Higher order iterator library for JavaScript/TypeScript.",
   "main": "index.js",
+  "type": "module",
   "types": "index.d.ts",
   "scripts": {
     "lint": "eslint *.js",
@@ -13,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yomguithereal/obliterator.git"
+    "url": "git+https://github.com/connormckelvey/obliterator.git"
   },
   "keywords": [
     "iterator"
